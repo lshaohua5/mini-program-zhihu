@@ -7,7 +7,7 @@
   </view>
   <!--推荐信息-->
   <view class="feed">
-    <view class="feed_item" wx:for="{{feedList}}" wx:key="index">
+    <view class="feed_item" wx:for="{{feedList}}" data-item='{{item.question_id}}' wx:key="index" bindtap='goAnswers'>
       <view class="feed_item_title">{{item.question}}</view>
       <image class="feed_item_img" src="{{item.feed_source_img}}"></image>
       <view class="feed_item_main">{{item.answer_ctnt}}</view>
@@ -17,5 +17,11 @@
         <view class="more">...</view>
       </view>
     </view>
+    <!-- 下拉刷新 -->
+    <view class='load'>
+      <image wx:if="{{feedNum!=2}}" class='loading' src='../../img/loading.png'></image>
+      <view wx:else class='explain'>----我是有底线的-----</view>
+    </view>
+
   </view>
 </view>

@@ -1,6 +1,4 @@
-page {
-  background: #ebebeb;
-}
+
 
 .user_info {
   box-sizing: border-box;

@@ -5,7 +5,8 @@
     "pages/message/message",
     "pages/user/user",
     "pages/search/search",
-    "pages/userInfo/userInfo"
+    "pages/userInfo/userInfo",
+    "pages/answers/answers"
   ],
   "window": {
     "backgroundTextStyle": "light",

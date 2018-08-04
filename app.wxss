@@ -2,6 +2,10 @@
 @import 'lib/weui.wxss';
 @import 'lib/iconfont/iconfont.wxss';
 
+page {
+  background: #ebebeb;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -20,13 +24,17 @@
   background: #fff;
   display: flex;
   flex-flow: nowrap;
+  position: relative;
 }
-.search .icon_search{
+
+.search .icon_search {
   position: absolute;
+  z-index: 2;
   top: 16rpx;
   left: 26rpx;
   color: #626262;
 }
+
 .search input {
   flex: 1;
   height: 70rpx;

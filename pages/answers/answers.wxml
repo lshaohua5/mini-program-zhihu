@@ -1,0 +1,41 @@
+<!--pages/answers/answers.wxml-->
+<!-- 问题分类 -->
+<view class='feed_type'>
+  <text class='type'>科技</text>
+  <text class='type'>人文</text>
+  <text class='type'>社会</text>
+</view>
+<!-- 问题详情 -->
+<view class='feed_info'>
+  <view class='title'>{{curQuestion.question}}</view>
+  <view class='des'>
+    {{curQuestion.answer_ctnt}}
+  </view>
+  <view class='attention'>
+    <text class='pople'>{{curQuestion.good_num}}人关注</text>
+    <text class='pop'>{{curQuestion.comment_num}}条评价</text>
+    <button class="btn">+ 关注问题</button>
+  </view>
+</view>
+<!-- 个人操作 -->
+<view class='user'>
+  <view class='item iconfont icon-wode-active'>邀请回答</view>
+  <view class='item add iconfont icon-bi'>添加回答</view>
+</view>
+<!-- 回答列表操作 -->
+<view class='question_des'>
+  <text>{{curQuestion.good_num}}个回答</text>
+  <text>按质量排序</text>
+</view>
+<!-- 回答列表 -->
+<view class='question_list' wx:for="{{answersList}}" wx:key='{{index}}'>
+  <view class='qu_name'>
+    <text class='circle'></text> {{item.feed_source_name}}
+  </view>
+  <view class='qu_des'>{{item.answer_ctnt}}</view>
+  <view class='qu_t'>
+    <text class='pople'>{{item.good_num}}赞同</text>
+    <text class='pop'>{{item.comment_num}}评价</text>
+    <text class='time'>{{item.answer_id}}天前</text>
+  </view>
+</view>

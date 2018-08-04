@@ -1,0 +1,139 @@
+/* pages/answers/answers.wxss */
+
+.feed_type {
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.feed_type .type {
+  display: inline-block;
+  width: 120rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 14px;
+  background: #f6f6f6;
+  border-radius: 5px;
+}
+
+.feed_info {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+
+.feed_info .title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 70rpx;
+}
+
+.feed_info .des {
+  font-size: 14px;
+  color: #666;
+}
+
+.feed_info .attention {
+  height: 80rpx;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  font-size: 14px;
+  color: #686868;
+}
+
+.feed_info .attention .pop {
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.feed_info .attention .btn {
+  font-size: 15px;
+  min-width: 180rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #0084ff;
+  color: #fff;
+}
+
+.user {
+  height: 100rpx;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.user .item {
+  width: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  color: #000;
+}
+
+.user .add {
+  border-left: 1px solid #f0f0f0;
+}
+
+.question_des {
+  height: 80rpx;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  color: #686868;
+}
+
+.question_list {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40rpx;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20rpx;
+}
+
+.question_list .qu_name {
+  font-size: 13px;
+  color: #686868;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.question_list .qu_name .circle {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border: 2px solid #0084ff;
+  margin-right: 20rpx;
+}
+
+.question_list .qu_des {
+  font-size: 12px;
+  color: #000;
+  line-height: 20px;
+}
+
+.question_list .qu_t {
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  margin-top: 20rpx;
+}
+
+.question_list .pop {
+  margin: 0 20rpx;
+}
