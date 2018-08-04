@@ -1,0 +1,145 @@
+page {
+  background: #ebebeb;
+}
+
+.user_info {
+  box-sizing: border-box;
+  width: 100%;
+  height: 420rpx;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.user {
+  width: 100%;
+  height: 300rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.user_name {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.content {
+  width: 100%;
+  height: 120rpx;
+  background: #fff;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-around;
+}
+
+.content .item {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .item .num {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.content .item .des {
+  font-size: 14px;
+}
+
+.user_item {
+  width: 100%;
+  margin: 20rpx 0;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.user_item .item {
+  min-width: 160rpx;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25rpx;
+}
+
+.user_item .item .iconfont {
+  font-size: 35px;
+}
+.user_item .item .des {
+  font-size: 12px;
+}
+
+.user_item .item .icon-shu {
+  color: #00d176;
+}
+.user_item .item .icon-tedianshandianfahuo {
+  color: #0091fe;
+}
+.user_item .item .icon-chakantiezishipin {
+  color: #e8c279;
+}
+.user_item .item .icon-qian {
+  color: #4f7ae3;
+}
+.user_item .item .icon-gouwu {
+  color: #0fc3f4;
+}
+.user_item .item .icon-xianbanshense- {
+  color: #0090ff;
+}
+.user_item .item .icon-xinhaota {
+  color: #00d654;
+}
+
+
+.set_item {
+  width: 100%;
+  margin: 20rpx 0;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.set_item .item {
+  min-width: 160rpx;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25rpx;
+}
+
+.set_item .item .iconfont {
+  font-size: 35px;
+}
+.set_item .item .des {
+  font-size: 12px;
+}
+
+.set_item .item .icon-shumiao {
+  color: #4f7ae3;
+}
+.set_item .item .icon-gouwu {
+  color: #888a97;
+}
+.set_item .item .icon-yejian {
+  color: #5e57e1;
+}
+.set_item .item .icon-set {
+  color: #00d654;
+}

@@ -1,0 +1,4 @@
+<!--message.wxml-->
+<view class="container">
+    <view>消息</view>
+</view>

@@ -1,0 +1,32 @@
+<!--user.wxml-->
+<view id="user">
+  <view class='user_info'>
+    <!-- 个人信息 -->
+    <view class='user' style='background:url({{userInfo.avatarUrl}}) no-repeat;opacity: 0.5;background-size:100%;'>
+      <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+      <text class='user_name'>{{userInfo.nickName}}</text>
+    </view>
+    <!-- 个人行为 -->
+    <view class='content'>
+      <view class='item' wx:for='{{contentList}}'>
+        <text class='num'>{{item.num}}</text>
+        <text class='des'>{{item.des}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 我的项目 -->
+  <view class='user_item'>
+    <view class='item' wx:for='{{userList}}'>
+      <text class='num iconfont {{item.icon}}'></text>
+      <text class='des'>{{item.des}}</text>
+    </view>
+  </view>
+
+  <!-- 我的项目 -->
+  <view class='set_item'>
+    <view class='item' wx:for='{{setList}}'>
+      <text class='num iconfont {{item.icon}}'></text>
+      <text class='des'>{{item.des}}</text>
+    </view>
+  </view>
+</view>

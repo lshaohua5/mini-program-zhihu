@@ -1,0 +1,73 @@
+<view class='university'>
+  <!-- 轮播图 -->
+  <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 项目类别 -->
+  <view class='item_wrraper'>
+    <view class='item'>
+      <image class='icon' src='../../img/market.png'></image>
+      <view class='iten_des'>职场成长</view>
+    </view>
+    <view class='item'>
+      <image class='icon' src='../../img/heart.png'></image>
+      <view class='iten_des'>心理健康</view>
+    </view>
+    <view class='item'>
+      <image class='icon' src='../../img/univer.png'></image>
+      <view class='iten_des'>考试培训</view>
+    </view>
+    <view class='item'>
+      <image class='icon' src='../../img/internet.png'></image>
+      <view class='iten_des'>互联网</view>
+    </view>
+    <view class='item'>
+      <image class='icon' src='../../img/busness.png'></image>
+      <view class='iten_des'>商学院</view>
+    </view>
+    <view class='item'>
+      <image class='icon' src='../../img/live.png'></image>
+      <view class='iten_des'>生活研修</view>
+    </view>
+    <view class='item'>
+      <image class='icon earch' src='../../img/earch.png'></image>
+      <view class='iten_des'>科技科普</view>
+    </view>
+    <view class='item'>
+      <image class='icon' src='../../img/medicine.png'></image>
+      <view class='iten_des'>健康学堂</view>
+    </view>
+    <view class='item'>
+      <image class='icon' src='../../img/fan.png'></image>
+      <view class='iten_des'>人文艺术</view>
+    </view>
+    <view class='item'>
+      <image class='icon' src='../../img/member.png'></image>
+      <view class='iten_des'>会员课堂</view>
+    </view>
+  </view>
+  <!-- 推荐列表 -->
+  <view class='feed_wrapper'>
+    <view class='feed_title'>编辑推荐</view>
+    <view class='feed_info' wx:for='{{feedList}}'>
+      <image class='feed_img' src='{{item.feed_source_img}}'></image>
+      <view class='feed'>
+        <text class='feed_t'>{{item.question}}</text>
+        <text class='feed_des'>{{item.answer_ctnt}}</text>
+        <view class='feed_type'>
+          <text class='time'>{{item.feed_source_id}}    小时</text>
+          <text class='lesson iconfont icon-shoucang'>   {{item.answer_id}}   讲</text>
+        </view>
+      </view>
+      <view class='money'>
+        <text class='left'></text>
+        <text class='money_info'>￥{{item.feed_source_id}}</text>
+        <text class='right'></text>
+      </view>
+    </view>
+  </view>
+</view>

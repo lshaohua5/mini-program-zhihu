@@ -1,0 +1,138 @@
+.university {
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+
+.swiper {
+  border-radius: 5rpx;
+  overflow: hidden;
+}
+
+.slide-image {
+  width: 100%;
+  height: 500rpx;
+  display: block;
+  border-radius: 10rpx;
+}
+
+.item_wrraper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.item_wrraper .item {
+  width: 135rpx;
+  height: 170rpx;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.item_wrraper .item .icon {
+  width: 70rpx;
+  height: 70rpx;
+  margin-bottom: 30rpx;
+}
+
+.item_wrraper .item .earch {
+  width: 85rpx;
+  margin-bottom: 30rpx;
+}
+
+.feed_wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+
+.feed_title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.feed_info {
+  display: flex;
+  flex-flow: nowrap;
+  margin-bottom: 30rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.feed_info .feed_img {
+  display: block;
+  width: 220rpx;
+  height: 280rpx;
+  border-radius: 10rpx;
+}
+
+.feed_info .feed {
+  flex: 1;
+  width: 360rpx;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between ;
+  margin: 0 20rpx;
+}
+
+.feed_info .feed .feed_t {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.feed_info .feed .feed_des {
+  width: 100%;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 20rpx 0;
+  color: #848484;
+}
+.feed_type{
+  color: #848484;
+  font-size: 14px;
+}
+.feed_type .lesson{
+  margin-left: 20rpx;
+  font-size: 14px;
+}
+.money{
+  height: 280rpx;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+}
+.money_info{
+  display: inline-block;
+  height: 60rpx;
+  background: #f6f6f6;
+  line-height: 60rpx;
+  font-size: 11px;
+  color: #e4a56b;
+  font-weight: 600;
+}
+.left{
+  display: inline-block;
+  height: 60rpx;
+  width: 30rpx;
+  background: #f6f6f6;
+  border-radius: 30rpx 0 0 30rpx;
+}
+.right{
+  display: inline-block;
+  height: 60rpx;
+  width: 30rpx;
+  background: #f6f6f6;
+  border-radius: 0 30rpx 30rpx 0;
+}
+

@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="home">
+  <!--搜索框-->
+  <view class="search">
+    <view class='iconfont icon-iconfontzhizuobiaozhun023131 icon_search'></view>
+    <input bindfocus="goSearch" placeholder="请输入要搜索的信息" type="text"/>
+  </view>
+  <!--推荐信息-->
+  <view class="feed">
+    <view class="feed_item" wx:for="{{feedList}}" wx:key="index">
+      <view class="feed_item_title">{{item.question}}</view>
+      <image class="feed_item_img" src="{{item.feed_source_img}}"></image>
+      <view class="feed_item_main">{{item.answer_ctnt}}</view>
+      <view class="feed_info">
+        <view class="goods">{{item.good_num}}  赞</view>
+        <view class="comment">{{item.comment_num}}   评论</view>
+        <view class="more">...</view>
+      </view>
+    </view>
+  </view>
+</view>

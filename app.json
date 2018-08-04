@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/university/university",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/userInfo/userInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "仿知乎",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color":"#999999",
+    "selectedColor":"#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"img/home.png",
+        "selectedIconPath":"img/homeSelecte.png"
+      },
+      {
+        "pagePath": "pages/university/university",
+        "text": "大学",
+        "iconPath":"img/university.png",
+        "selectedIconPath":"img/universitySelecte.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "通知",
+        "iconPath":"img/message.png",
+        "selectedIconPath":"img/messageSelecte.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath":"img/user.png",
+        "selectedIconPath":"img/userSelecte.png"
+      }
+    ]
+  }
+}

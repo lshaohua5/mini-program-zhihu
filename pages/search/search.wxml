@@ -1,0 +1,39 @@
+<!--search.wxml-->
+<view id="search">
+  <!--search-->
+  <view class="search">
+    <view class='iconfont icon-iconfontzhizuobiaozhun023131 icon_search'></view>
+    <input class="search_input" focus="{{focusFlag}}" bindfocus="setFocus" bindblur='setBlur' bindinput='getSearchContent' type="text" placeholder="搜索知乎内容" />
+    <button wx:if='{{btnFlag}}' bindtap='saveSearchContent' class="weui-btn mini-btn " type="primary" size="mini">搜索</button>
+  </view>
+  <view class="main" bindtap="setBlur">
+    <!--tab切换-->
+    <view class="tab">
+      <ul>
+        <li wx:for="{{tabList}}" wx:key="index" data-index="{{index}}" bindtap="tab" class="{{currentIndex==index?'active':''}}">
+          <span>{{item}}</span>
+          <span class="bar"></span>
+        </li>
+      </ul>
+    </view>
+    <!-- tab切换数据展示内容 -->
+    <view class='tab_content'>
+        <view class='tab_content_item' wx:for="{{tabList}}" wx:key="index" class="{{currentIndex!=index?'tab_active':''}}">
+          <view class='content'>{{item}}</view>
+        </view>
+    </view>
+    <!-- 搜索历史 -->
+    <view class='search_history'>
+      <view class='search_history_title'>搜索历史</view>
+      <block wx:for='{{searchCHistory}}'>
+        <view class='history_item'>
+          <view class='iconfont icon-bi'></view>
+          <view class='history_item_content'>{{item}}</view>
+          <view class='iconfont icon-error'></view>
+        </view>
+      </block>
+
+    </view>
+  </view>
+
+</view>
